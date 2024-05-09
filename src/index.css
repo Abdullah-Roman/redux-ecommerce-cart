@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import "keep-react/css";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#root {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.keep-navlink span {
+  font-weight: 400;
+  font-size: 26px;
+}
+.slick-dots {
+  position: absolute;
+  top: 90%;
+}
+.slick-dots li {
+  margin: 0 -2px !important;
+}
+.slick-dots li button {
+  height: 10px !important;
+  width: 10px !important;
+  border-radius: 50%;
+  background-color: blue !important;
+  border: 2px solid white !important;
+}
+
+.slick-dots li.slick-active button {
+  background-color: red !important;
+  border: 2px solid orange;
+
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+}
+
+.slick-dots li button::before {
+  content: "" !important;
+}
+
+.card img {
+  height: 200px !important;
+}
+
+.spinner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.spinner p {
+  margin-top: 30px; /* Adds space between the spinner and the text */
+  font-size: 20px;
+  color: #123abc;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  list-style-type: none;
+}
+
+.pagination a {
+  padding: 8px;
+  margin: 4px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  cursor: pointer;
+}
+
+.pagination-active a {
+  background-color: #007bff;
+  color: white;
+}
+
+.pagination-disabled a {
+  color: grey;
+}
